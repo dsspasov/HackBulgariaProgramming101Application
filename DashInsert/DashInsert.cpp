@@ -1,8 +1,7 @@
 #include <iostream>  
 #include <string>
 using namespace std;
-
-//long long num,long long numRe,unsigned counter,unsigned index,
+//DashInsert(num) insert dashes '-' between each two neighboring odd numbers in num
 string DashInsert(long long num){
 	long long numRe=0;//num reverse
 	unsigned counter=1;
@@ -21,12 +20,12 @@ string DashInsert(long long num){
 		index = 0;
 		while(counter){
 			if(((numRe%10)%2!=0)&&(((numRe/10)%10)%2!=0)){
-				result[index]=char(numRe%10+48);
+				result[index]=char(numRe%10+48);//the code of the number(0=>48,1=>49,....)
 				result[index+1]= '-';
 				index++;
 			}
 			else{
-				result[index]=char(numRe%10+48);
+				result[index]=char(numRe%10+48);//the code of the number(0=>48,1=>49,....)
 			}
 			numRe=numRe/10;
 			index++;
