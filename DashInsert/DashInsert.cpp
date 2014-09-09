@@ -16,7 +16,7 @@ string DashInsert(long long num){
 											  //(note: size is the size of result). And when the number is negative i need
 											  //one more position for the sign.
 	unsigned index;
-	if(numRe>0){//if the number is possitive
+	if(numRe>=0){//if the number is possitive
 		index = 0;
 		while(counter){
 			if(((numRe%10)%2!=0)&&(((numRe/10)%10)%2!=0)){
