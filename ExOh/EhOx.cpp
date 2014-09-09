@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
+//str='xoxxxoox...'.returns true if there is an equal number of x's and o's in str
 bool ExOh(string str)
 {
 	unsigned int i=0,countX=0,countO=0;
