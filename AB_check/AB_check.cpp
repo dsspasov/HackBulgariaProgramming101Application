@@ -1,6 +1,8 @@
 #include<iostream>
 #include<string>
 using namespace std;
+//AB_check(str) return true if the characters a and b are separated
+//by exactly 3 places anywhere in the string at least once.Otherwise return false
 bool AB_check(string str){
 	unsigned int index=0;
 	while(index<(str.length()-4)){	
